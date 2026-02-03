@@ -29,7 +29,7 @@ footer {
     transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate3d(0, -80px, 0) scale(1.25);
+    transform: translate3d(-50px, -100px, -50px) scale(1.05);
   }
   100% {
     transform: translate3d(0, 0, 0) scale(1);
@@ -117,39 +117,40 @@ p {
   color: #acb3be;
 }
 
-.about {
+.card {
   max-width: 680px;
-  margin: 120px auto;
-  padding: 28px 32px;
+  margin: 90px;
+  padding: 24px 28px;
 
   background: rgba(2, 6, 23, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  
 
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-
+  border-left: 4px solid #22c55e;
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
-
+    
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.about:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow:
     0 18px 50px rgba(0, 0, 0, 0.55),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.about h2 {
+.card h2 {
   font-size: 1.6rem;
   margin-bottom: 14px;
   position: relative;
 }
 
-.about h2::after {
+.card h2::after {
   content: "";
   position: absolute;
   left: 0;
@@ -159,4 +160,5 @@ p {
   border-radius: 2px;
   background: linear-gradient(90deg,#22c55e,#38bdf8);
   transition: width 0.6s ease;}
-.about:hover h2::after { transition: width 0.6s ease; width: 96px; }
+.card:hover h2::after { transition: width 0.6s ease; width: 96px; } 
+#card-center {  margin-left: auto; margin-right: auto; margin-top: 250px;}
